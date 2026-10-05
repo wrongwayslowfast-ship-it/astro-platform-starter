@@ -1,19 +1,230 @@
----
-import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta
+    name="description"
+    content="Fun by Arva Johnson LLC — original art, books, novelty products, game concepts and creative ideas."
+  />
+  <title>Fun by Arva Johnson LLC</title>
 
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+  <style>
+    :root {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      background: #050914;
+    }
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
----
+    * {
+      box-sizing: border-box;
+    }
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, #12376a 0%, #07152d 40%, #030711 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    .brand {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .hero {
+      padding: 90px 0 70px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 900px;
+      font-size: clamp(2.7rem, 8vw, 5.8rem);
+      line-height: .98;
+    }
+
+    .tagline {
+      margin-top: 25px;
+      max-width: 760px;
+      font-size: clamp(1.25rem, 3vw, 1.8rem);
+      color: #bcd7ff;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      color: #d7e3f6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 22px;
+      background: #1687ff;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 55px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      line-height: 1.55;
+      color: #cdd9eb;
+    }
+
+    .spotlight {
+      border-radius: 18px;
+      padding: 35px;
+      background: linear-gradient(135deg, #163f7a, #09172c);
+      border: 1px solid rgba(95,166,255,.45);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 35px 0;
+      border-top: 1px solid rgba(255,255,255,.15);
+      color: #aebdd1;
+      font-size: .95rem;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap brand">FUN BY ARVA JOHNSON LLC</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Building Worlds.<br />Designing Ideas.<br />Creating Products.</h1>
+
+        <p class="tagline">
+          Original creations from art and books to novelty products,
+          game concepts and ideas that refuse to stay in one box.
+        </p>
+
+        <p class="intro">
+          Fun by Arva Johnson LLC is an Arkansas creative company founded
+          by Leslie Eugene Johnson Jr. Our work spans original artwork,
+          printed products, books, photography, novelty gifts, game concepts
+          and an expanding collection of creative projects.
+        </p>
+
+        <a class="button" href="mailto:funbyarvajohnsonjohnson@gmail.com">
+          Contact Fun by Arva Johnson LLC
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>What We Create</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Original Art & Prints</h3>
+            <p>
+              Original artwork ranging from bold fantasy and creature designs
+              to humor, seasonal art and photography-inspired creations.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Books</h3>
+            <p>
+              Original fiction and imaginative worlds spanning horror,
+              fantasy, supernatural stories and larger creative universes.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Novelty Products</h3>
+            <p>
+              Original gag gifts and unusual product concepts including
+              Fart in a Jar, Burp in a Jar and Sneeze in a Jar.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Game Concepts</h3>
+            <p>
+              New worlds, mechanics and entertainment concepts developed
+              through the Stormborn Games creative branch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="spotlight">
+          <h2>2027 Limited First Edition Calendar</h2>
+          <p class="intro">
+            An original twelve-month art calendar featuring a deliberately
+            unpredictable journey through motivation, animals, food chaos,
+            horror, apocalypse and Stormborn creativity.
+          </p>
+
+          <p>
+            <strong>First run: only 20 copies.</strong>
+          </p>
+
+          <a class="button" href="mailto:funbyarvajohnsonjohnson@gmail.com?subject=2027%20Calendar">
+            Ask About the Calendar
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Fun by Arva Johnson LLC · Carlisle, Arkansas
+    </div>
+  </footer>
+</body>
+</html>
