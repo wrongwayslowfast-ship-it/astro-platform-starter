@@ -110,6 +110,46 @@
       color: #cdd9eb;
     }
 
+
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .art-card {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,.28);
+    }
+
+    .art-card a {
+      display: block;
+    }
+
+    .art-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      transition: transform .2s ease;
+    }
+
+    .art-card:hover img {
+      transform: scale(1.025);
+    }
+
+    .gallery-note {
+      margin-top: -10px;
+      margin-bottom: 24px;
+      max-width: 760px;
+      color: #cdd9eb;
+      line-height: 1.6;
+    }
+
     .spider-card {
       border-color: rgba(151,106,255,.5);
       background: linear-gradient(145deg, rgba(64,24,111,.42), rgba(14,19,45,.8));
@@ -265,6 +305,91 @@
           <p>
             <strong>Spiderborn v3.20.1 — plugged into the web.</strong>
           </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="new-creations">
+      <div class="wrap">
+        <h2>New Creations</h2>
+        <p class="gallery-note">
+          A fresh look at original Fun by Arva Johnson LLC and Stormborn creations.
+          Click any image to see it full size.
+        </p>
+        <div class="art-grid">
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_000000002d2c81f99dedd4f22c23e307.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_000000002d2c81f99dedd4f22c23e307.png"
+                alt="Fun by Arva Johnson LLC creation 1"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000408081f9890c762acb036e38.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000408081f9890c762acb036e38.png"
+                alt="Fun by Arva Johnson LLC creation 2"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000638481f9bea5d232b22c154d.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000638481f9bea5d232b22c154d.png"
+                alt="Fun by Arva Johnson LLC creation 3"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000782081f99b139b32ed8e6e94.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000782081f99b139b32ed8e6e94.png"
+                alt="Fun by Arva Johnson LLC creation 4"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_000000008ae871f5b2f5c530992b8c67.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_000000008ae871f5b2f5c530992b8c67.png"
+                alt="Fun by Arva Johnson LLC creation 5"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000c998722fbde1e26fb82fd59f.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000c998722fbde1e26fb82fd59f.png"
+                alt="Fun by Arva Johnson LLC creation 6"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000d08081f99a9f69c66958c113.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000d08081f99a9f69c66958c113.png"
+                alt="Fun by Arva Johnson LLC creation 7"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+          <figure class="art-card">
+            <a href="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000dbe871f5ad8f530f6862788c.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://raw.githubusercontent.com/wrongwayslowfast-ship-it/astro-platform-starter/main/file_00000000dbe871f5ad8f530f6862788c.png"
+                alt="Fun by Arva Johnson LLC creation 8"
+                loading="lazy"
+              />
+            </a>
+          </figure>
         </div>
       </div>
     </section>
