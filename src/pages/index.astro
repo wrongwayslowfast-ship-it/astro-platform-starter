@@ -110,6 +110,50 @@
       color: #cdd9eb;
     }
 
+    .spider-card {
+      border-color: rgba(151,106,255,.5);
+      background: linear-gradient(145deg, rgba(64,24,111,.42), rgba(14,19,45,.8));
+    }
+
+    .spiderborn {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      padding: 38px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(102,67,180,.32), transparent 35%),
+        linear-gradient(135deg, #160d29, #07101f 60%, #02050c);
+      border: 1px solid rgba(151,106,255,.55);
+      box-shadow: inset 0 0 50px rgba(42,20,80,.35);
+    }
+
+    .spiderborn::after {
+      content: "🕸️";
+      position: absolute;
+      right: 18px;
+      top: 8px;
+      font-size: clamp(5rem, 15vw, 9rem);
+      opacity: .12;
+      transform: rotate(8deg);
+      pointer-events: none;
+    }
+
+    .spider-icon {
+      font-size: 2rem;
+      letter-spacing: .3rem;
+      margin-bottom: 8px;
+    }
+
+    .spiderborn h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+    }
+
+    .spiderborn strong {
+      color: #d9c7ff;
+    }
+
     .spotlight {
       border-radius: 18px;
       padding: 35px;
@@ -195,6 +239,32 @@
               through the Stormborn Games creative branch.
             </p>
           </div>
+
+          <div class="card spider-card">
+            <h3>Spiderborn 🕷️</h3>
+            <p>
+              A web-spun extension of Stormborn creativity — eerie creature art,
+              dark fantasy, horror energy and strange original ideas crawling
+              out of the creative web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="spiderborn">
+          <div class="spider-icon" aria-hidden="true">🕷️ 🕸️ 🕷️</div>
+          <h2>Spiderborn</h2>
+          <p class="intro">
+            Where Stormborn gets tangled in the web. Spiderborn brings together
+            creature concepts, dark imagination, horror-inspired art and original
+            designs with a strange webbed edge.
+          </p>
+          <p>
+            <strong>Spiderborn v3.20.1 — plugged into the web.</strong>
+          </p>
         </div>
       </div>
     </section>
